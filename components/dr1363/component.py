@@ -9,6 +9,7 @@ AUTO_LOAD = ["uart"]
 
 dr1363_ns = cg.esphome_ns.namespace("dr1363")
 
+# BELANGRIJK: UART schema eerst, daarna je eigen ID
 CONFIG_SCHEMA = uart.UART_DEVICE_SCHEMA.extend({
     cv.GenerateID(): cv.declare_id(DR1363Component),
 })
