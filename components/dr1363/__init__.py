@@ -7,4 +7,3 @@ DR1363Component = dr1363_ns.class_("DR1363Component", cg.Component)
 CONFIG_SCHEMA = cv.Schema({
     cv.GenerateID(): cv.declare_id(DR1363Component),
 })
-
