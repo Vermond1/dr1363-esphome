@@ -3,8 +3,7 @@ import esphome.config_validation as cv
 from esphome.components import uart
 from esphome.const import CONF_ID
 
-dr1363_ns = cg.esphome_ns.namespace("dr1363")
-DR1363Component = dr1363_ns.class_("DR1363Component", cg.Component, uart.UARTDevice)
+from . import DR1363Component
 
 AUTO_LOAD = ["uart"]
 
